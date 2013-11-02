@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EA286B914F82DE5004FA65F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA286B814F82DE5004FA65F /* Foundation.framework */; };
+		1EA286BC14F82DE5004FA65F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EA286BB14F82DE5004FA65F /* main.mm */; };
+		1EA286C014F82DE5004FA65F /* EEGLogger.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1EA286BF14F82DE5004FA65F /* EEGLogger.1 */; };
+		89AB8C4E16401AE40088E218 /* libedk.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AB8C4D16401AE40088E218 /* libedk.1.0.0.dylib */; };
+		89AB8C7216401BFC0088E218 /* libOsc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AB8C6316401BFC0088E218 /* libOsc.a */; };
+		89AB8C7316401BFC0088E218 /* liboscpack.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AB8C6416401BFC0088E218 /* liboscpack.dylib */; };
+		89AB8C7416401BFC0088E218 /* liboscpack.dylib.1.0.2 in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AB8C6516401BFC0088E218 /* liboscpack.dylib.1.0.2 */; };
+		89AB8C7516401BFC0088E218 /* ofxOscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89AB8C6A16401BFC0088E218 /* ofxOscBundle.cpp */; };
+		89AB8C7616401BFC0088E218 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89AB8C6C16401BFC0088E218 /* ofxOscMessage.cpp */; };
+		89AB8C7716401BFC0088E218 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89AB8C6E16401BFC0088E218 /* ofxOscReceiver.cpp */; };
+		89AB8C7816401BFC0088E218 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89AB8C7016401BFC0088E218 /* ofxOscSender.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EA286B214F82DE5004FA65F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				1EA286C014F82DE5004FA65F /* EEGLogger.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1EA286B414F82DE5004FA65F /* EEGLogger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EEGLogger; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA286B814F82DE5004FA65F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1EA286BB14F82DE5004FA65F /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		1EA286BE14F82DE5004FA65F /* EEGLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEGLogger-Prefix.pch"; sourceTree = "<group>"; };
+		1EA286BF14F82DE5004FA65F /* EEGLogger.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = EEGLogger.1; sourceTree = "<group>"; };
+		89AB8C4D16401AE40088E218 /* libedk.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libedk.1.0.0.dylib; path = lib/libedk.1.0.0.dylib; sourceTree = "<group>"; };
+		89AB8C5416401BFC0088E218 /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
+		89AB8C5516401BFC0088E218 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		89AB8C5616401BFC0088E218 /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		89AB8C5716401BFC0088E218 /* TimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
+		89AB8C5816401BFC0088E218 /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		89AB8C5A16401BFC0088E218 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		89AB8C5B16401BFC0088E218 /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		89AB8C5C16401BFC0088E218 /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		89AB8C5D16401BFC0088E218 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		89AB8C5E16401BFC0088E218 /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		89AB8C5F16401BFC0088E218 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		89AB8C6016401BFC0088E218 /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		89AB8C6116401BFC0088E218 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		89AB8C6316401BFC0088E218 /* libOsc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOsc.a; sourceTree = "<group>"; };
+		89AB8C6416401BFC0088E218 /* liboscpack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liboscpack.dylib; sourceTree = "<group>"; };
+		89AB8C6516401BFC0088E218 /* liboscpack.dylib.1.0.2 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liboscpack.dylib.1.0.2; sourceTree = "<group>"; };
+		89AB8C6616401BFC0088E218 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		89AB8C6816401BFC0088E218 /* ofxOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOsc.h; sourceTree = "<group>"; };
+		89AB8C6916401BFC0088E218 /* ofxOscArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscArg.h; sourceTree = "<group>"; };
+		89AB8C6A16401BFC0088E218 /* ofxOscBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscBundle.cpp; sourceTree = "<group>"; };
+		89AB8C6B16401BFC0088E218 /* ofxOscBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscBundle.h; sourceTree = "<group>"; };
+		89AB8C6C16401BFC0088E218 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscMessage.cpp; sourceTree = "<group>"; };
+		89AB8C6D16401BFC0088E218 /* ofxOscMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscMessage.h; sourceTree = "<group>"; };
+		89AB8C6E16401BFC0088E218 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscReceiver.cpp; sourceTree = "<group>"; };
+		89AB8C6F16401BFC0088E218 /* ofxOscReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscReceiver.h; sourceTree = "<group>"; };
+		89AB8C7016401BFC0088E218 /* ofxOscSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscSender.cpp; sourceTree = "<group>"; };
+		89AB8C7116401BFC0088E218 /* ofxOscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscSender.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EA286B114F82DE5004FA65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA286B914F82DE5004FA65F /* Foundation.framework in Frameworks */,
+				89AB8C4E16401AE40088E218 /* libedk.1.0.0.dylib in Frameworks */,
+				89AB8C7216401BFC0088E218 /* libOsc.a in Frameworks */,
+				89AB8C7316401BFC0088E218 /* liboscpack.dylib in Frameworks */,
+				89AB8C7416401BFC0088E218 /* liboscpack.dylib.1.0.2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EA286A914F82DE5004FA65F = {
+			isa = PBXGroup;
+			children = (
+				89AB8C4D16401AE40088E218 /* libedk.1.0.0.dylib */,
+				1EA286BA14F82DE5004FA65F /* EEGLogger */,
+				1EA286B714F82DE5004FA65F /* Frameworks */,
+				1EA286B514F82DE5004FA65F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EA286B514F82DE5004FA65F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EA286B414F82DE5004FA65F /* EEGLogger */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EA286B714F82DE5004FA65F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EA286B814F82DE5004FA65F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EA286BA14F82DE5004FA65F /* EEGLogger */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C4F16401BFC0088E218 /* ofxOsc */,
+				1EA286BB14F82DE5004FA65F /* main.mm */,
+				1EA286BF14F82DE5004FA65F /* EEGLogger.1 */,
+				1EA286BD14F82DE5004FA65F /* Supporting Files */,
+			);
+			path = EEGLogger;
+			sourceTree = "<group>";
+		};
+		1EA286BD14F82DE5004FA65F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EA286BE14F82DE5004FA65F /* EEGLogger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89AB8C4F16401BFC0088E218 /* ofxOsc */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C5016401BFC0088E218 /* libs */,
+				89AB8C6616401BFC0088E218 /* LICENSE.txt */,
+				89AB8C6716401BFC0088E218 /* src */,
+			);
+			path = ofxOsc;
+			sourceTree = "<group>";
+		};
+		89AB8C5016401BFC0088E218 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C5116401BFC0088E218 /* oscpack */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		89AB8C5116401BFC0088E218 /* oscpack */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C5216401BFC0088E218 /* include */,
+				89AB8C6216401BFC0088E218 /* lib */,
+			);
+			path = oscpack;
+			sourceTree = "<group>";
+		};
+		89AB8C5216401BFC0088E218 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C5316401BFC0088E218 /* ip */,
+				89AB8C5916401BFC0088E218 /* osc */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		89AB8C5316401BFC0088E218 /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C5416401BFC0088E218 /* IpEndpointName.h */,
+				89AB8C5516401BFC0088E218 /* NetworkingUtils.h */,
+				89AB8C5616401BFC0088E218 /* PacketListener.h */,
+				89AB8C5716401BFC0088E218 /* TimerListener.h */,
+				89AB8C5816401BFC0088E218 /* UdpSocket.h */,
+			);
+			path = ip;
+			sourceTree = "<group>";
+		};
+		89AB8C5916401BFC0088E218 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C5A16401BFC0088E218 /* MessageMappingOscPacketListener.h */,
+				89AB8C5B16401BFC0088E218 /* OscException.h */,
+				89AB8C5C16401BFC0088E218 /* OscHostEndianness.h */,
+				89AB8C5D16401BFC0088E218 /* OscOutboundPacketStream.h */,
+				89AB8C5E16401BFC0088E218 /* OscPacketListener.h */,
+				89AB8C5F16401BFC0088E218 /* OscPrintReceivedElements.h */,
+				89AB8C6016401BFC0088E218 /* OscReceivedElements.h */,
+				89AB8C6116401BFC0088E218 /* OscTypes.h */,
+			);
+			path = osc;
+			sourceTree = "<group>";
+		};
+		89AB8C6216401BFC0088E218 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C6316401BFC0088E218 /* libOsc.a */,
+				89AB8C6416401BFC0088E218 /* liboscpack.dylib */,
+				89AB8C6516401BFC0088E218 /* liboscpack.dylib.1.0.2 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		89AB8C6716401BFC0088E218 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				89AB8C6816401BFC0088E218 /* ofxOsc.h */,
+				89AB8C6916401BFC0088E218 /* ofxOscArg.h */,
+				89AB8C6A16401BFC0088E218 /* ofxOscBundle.cpp */,
+				89AB8C6B16401BFC0088E218 /* ofxOscBundle.h */,
+				89AB8C6C16401BFC0088E218 /* ofxOscMessage.cpp */,
+				89AB8C6D16401BFC0088E218 /* ofxOscMessage.h */,
+				89AB8C6E16401BFC0088E218 /* ofxOscReceiver.cpp */,
+				89AB8C6F16401BFC0088E218 /* ofxOscReceiver.h */,
+				89AB8C7016401BFC0088E218 /* ofxOscSender.cpp */,
+				89AB8C7116401BFC0088E218 /* ofxOscSender.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EA286B314F82DE5004FA65F /* EEGLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA286C314F82DE5004FA65F /* Build configuration list for PBXNativeTarget "EEGLogger" */;
+			buildPhases = (
+				1EA286B014F82DE5004FA65F /* Sources */,
+				1EA286B114F82DE5004FA65F /* Frameworks */,
+				1EA286B214F82DE5004FA65F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EEGLogger;
+			productName = EEGLogger;
+			productReference = 1EA286B414F82DE5004FA65F /* EEGLogger */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EA286AB14F82DE5004FA65F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1EA286AE14F82DE5004FA65F /* Build configuration list for PBXProject "EEGLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1EA286A914F82DE5004FA65F;
+			productRefGroup = 1EA286B514F82DE5004FA65F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EA286B314F82DE5004FA65F /* EEGLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EA286B014F82DE5004FA65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA286BC14F82DE5004FA65F /* main.mm in Sources */,
+				89AB8C7516401BFC0088E218 /* ofxOscBundle.cpp in Sources */,
+				89AB8C7616401BFC0088E218 /* ofxOscMessage.cpp in Sources */,
+				89AB8C7716401BFC0088E218 /* ofxOscReceiver.cpp in Sources */,
+				89AB8C7816401BFC0088E218 /* ofxOscSender.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1EA286C114F82DE5004FA65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../include;
+				LIBRARY_SEARCH_PATHS = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = /Users/pkmital/Downloads/docs/Examples/Xcode/EEGLogger/lib;
+			};
+			name = Debug;
+		};
+		1EA286C214F82DE5004FA65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../include;
+				LIBRARY_SEARCH_PATHS = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = /Users/pkmital/Downloads/docs/Examples/Xcode/EEGLogger/lib;
+			};
+			name = Release;
+		};
+		1EA286C414F82DE5004FA65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EEGLogger/EEGLogger-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../lib,
+					"\"$(SRCROOT)/EEGLogger/ofxOsc/libs/oscpack/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
+			};
+			name = Debug;
+		};
+		1EA286C514F82DE5004FA65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EEGLogger/EEGLogger-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../lib,
+					"\"$(SRCROOT)/EEGLogger/ofxOsc/libs/oscpack/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EA286AE14F82DE5004FA65F /* Build configuration list for PBXProject "EEGLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA286C114F82DE5004FA65F /* Debug */,
+				1EA286C214F82DE5004FA65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA286C314F82DE5004FA65F /* Build configuration list for PBXNativeTarget "EEGLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA286C414F82DE5004FA65F /* Debug */,
+				1EA286C514F82DE5004FA65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EA286AB14F82DE5004FA65F /* Project object */;
+}
